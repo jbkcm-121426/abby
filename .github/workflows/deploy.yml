@@ -1,0 +1,70 @@
+name: Build and Publish ASP.NET Core App
+on:
+  push:
+    branches:
+      - main # Trigger on pushes to the main branch
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+env:
+  DOTNET_VERSION: '8.0.x' # Specify your .NET SDK version
+  PROJECT_PATH: 'AbbyWeb\AbbyWeb.csproj' # Path to your main project file (adjust if different)
+  PUBLISH_DIR: 'AbbyWeb\publish' # Directory where the published output will be stored
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest # Use a fresh Ubuntu virtual environment
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+    #   - name: Install SonarScanner for .NET
+    #     run: |
+    #         dotnet tool install --global dotnet-sonarscanner --version ${{ env.SONAR_SCANNER_VERSION }}
+    #         echo "$HOME/.dotnet/tools" >> $GITHUB_PATH # Add dotnet tools to PATH
+    #   - name: Begin SonarQube Analysis
+    #     env:
+    #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed for GitHub integration (e.g., PR decoration)
+    #     run: |
+    #         dotnet sonarscanner begin \
+    #           /k:"${{ secrets.SONAR_PROJECT_KEY }}" \
+    #           /d:sonar.host.url="${{ secrets.SONAR_HOST_URL }}" \
+    #           /d:sonar.token="${{ secrets.SONAR_TOKEN }}" \
+    #           /d:sonar.cs.dotnet.tools.path="$HOME/.dotnet/tools" \
+    #           ${{ secrets.SONAR_ORGANIZATION && format('/o:"{0}"', secrets.SONAR_ORGANIZATION) || '' }} \
+    #           /d:sonar.scm.provider=git \
+    #           /d:sonar.qualitygate.wait=true # Optional: Fail build if Quality Gate fails  
+    #   - name: Restore Dependencies
+    #     run: dotnet restore ${{ env.PROJECT_PATH }}  
+      - name: Build Project
+          # The build step must run AFTER 'sonarscanner begin' to collect analysis data
+        run: dotnet build ${{ env.PROJECT_PATH }} --configuration Release --no-restore  
+        # - name: Run Tests (Optional - Recommended before SonarQube End)
+        #   run: dotnet test ${{ env.PROJECT_PATH }} --no-build --verbosity normal --collect:"XPlat Code Coverage"  
+    #   - name: End SonarQube Analysis
+    #     # This step sends the analysis results to SonarQube
+    #     run: dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"  
+      - name: Publish Application
+        run: dotnet publish ${{ env.PROJECT_PATH }} --configuration Release --output ${{ env.PUBLISH_DIR }}  
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v4
+        with:
+         name: mywebapp-artifact
+         path: ${{ env.PUBLISH_DIR }}
+         retention-days: 7
+      - name: Download artifact for deployment
+        uses: actions/download-artifact@v4
+        with:
+         name: mywebapp-artifact
+         path: ${{ env.PUBLISH_DIR }} # Download to the same publish directory
+
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+         app-name: 'balawebapp' # Replace with your App Service name
+         publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }} # A GitHub secret containing your publish profile
+         package: ${{ env.PUBLISH_DIR }}
