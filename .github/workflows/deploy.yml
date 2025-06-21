@@ -7,8 +7,8 @@ on:
 
 env:
   DOTNET_VERSION: '8.0.x' # Specify your .NET SDK version
-  PROJECT_PATH: 'AbbyWeb.csproj' # Path to your main project file (adjust if different)
-  PUBLISH_DIR: 'publish' # Directory where the published output will be stored
+  PROJECT_PATH: './AbbyWeb/AbbyWeb.csproj' # Path to your main project file (adjust if different)
+  PUBLISH_DIR: '.AbbyWeb/publish' # Directory where the published output will be stored
 
 jobs:
   build-and-publish:
