@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\AbbyWeb\\AbbyWeb.csproj": {}
+    "C:\\Users\\balak\\source\\repos\\Abby\\AbbyWeb\\AbbyWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.DAL\\Abby.DAL.csproj": {
+    "C:\\Users\\balak\\source\\repos\\Abby\\Abby.DAL\\Abby.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.DAL\\Abby.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.DAL\\Abby.DAL.csproj",
         "projectName": "Abby.DAL",
-        "projectPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.DAL\\Abby.DAL.csproj",
+        "projectPath": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.DAL\\Abby.DAL.csproj",
         "packagesPath": "C:\\Users\\balak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.DAL\\obj\\",
+        "outputPath": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.Models\\Abby.Models.csproj": {
-                "projectPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.Models\\Abby.Models.csproj"
+              "C:\\Users\\balak\\source\\repos\\Abby\\Abby.Models\\Abby.Models.csproj": {
+                "projectPath": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.Models\\Abby.Models.csproj"
               }
             }
           }
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.Models\\Abby.Models.csproj": {
+    "C:\\Users\\balak\\source\\repos\\Abby\\Abby.Models\\Abby.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.Models\\Abby.Models.csproj",
+        "projectUniqueName": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.Models\\Abby.Models.csproj",
         "projectName": "Abby.Models",
-        "projectPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.Models\\Abby.Models.csproj",
+        "projectPath": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.Models\\Abby.Models.csproj",
         "packagesPath": "C:\\Users\\balak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.Models\\obj\\",
+        "outputPath": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -158,14 +158,14 @@
         }
       }
     },
-    "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\AbbyWeb\\AbbyWeb.csproj": {
+    "C:\\Users\\balak\\source\\repos\\Abby\\AbbyWeb\\AbbyWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\AbbyWeb\\AbbyWeb.csproj",
+        "projectUniqueName": "C:\\Users\\balak\\source\\repos\\Abby\\AbbyWeb\\AbbyWeb.csproj",
         "projectName": "AbbyWeb",
-        "projectPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\AbbyWeb\\AbbyWeb.csproj",
+        "projectPath": "C:\\Users\\balak\\source\\repos\\Abby\\AbbyWeb\\AbbyWeb.csproj",
         "packagesPath": "C:\\Users\\balak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\AbbyWeb\\obj\\",
+        "outputPath": "C:\\Users\\balak\\source\\repos\\Abby\\AbbyWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -187,8 +187,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.DAL\\Abby.DAL.csproj": {
-                "projectPath": "C:\\Users\\balak\\Downloads\\ASP.NET-Core-Razor-App-main\\ASP.NET-Core-Razor-App-main\\Abby\\Abby.DAL\\Abby.DAL.csproj"
+              "C:\\Users\\balak\\source\\repos\\Abby\\Abby.DAL\\Abby.DAL.csproj": {
+                "projectPath": "C:\\Users\\balak\\source\\repos\\Abby\\Abby.DAL\\Abby.DAL.csproj"
               }
             }
           }
