@@ -6,7 +6,7 @@ on:
   workflow_dispatch: # Allows manual triggering of the workflow
 
 env:
-  DOTNET_VERSION: '8.0.x' # Specify your .NET SDK version
+  DOTNET_VERSION: '6.0.x' # Specify your .NET SDK version
   PROJECT_PATH: './AbbyWeb/AbbyWeb.csproj' # Path to your main project file (adjust if different)
   PUBLISH_DIR: '.AbbyWeb/publish' # Directory where the published output will be stored
 
