@@ -1,0 +1,12 @@
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\bin\Debug\net6.0\Abby.Models.deps.json
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\bin\Debug\net6.0\Abby.Models.dll
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\bin\Debug\net6.0\Abby.Models.pdb
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.AssemblyInfoInputs.cache
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.AssemblyInfo.cs
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.csproj.CoreCompileInputs.cache
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.sourcelink.json
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.dll
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\refint\Abby.Models.dll
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\Abby.Models.pdb
+C:\Users\balak\Downloads\ASP.NET-Core-Razor-App-main\ASP.NET-Core-Razor-App-main\Abby\Abby.Models\obj\Debug\net6.0\ref\Abby.Models.dll
